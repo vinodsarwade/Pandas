@@ -37,3 +37,11 @@ print(myvar)
 
 print(myvar.loc[0])     # to get rows from DataFrame use loc[] function, it will return a Series
 print(myvar.loc[[0,1]])    # to get multiple rows then use list of rows in loc[] it will return a DataFra  
+
+
+import pandas as pd 
+dic = {"A":[1,2,3], "B":[4,5,6], "C":[7,8,9]}
+df = pd.DataFrame(dic, index=["a", "b", "c"])
+print(df)
+print(df.loc["b"])   # using loc we can access rows using given index./ if not  index changed then we can give integer position also
+print(df.iloc[2])  # using iloc we can access rows using integer position.
