@@ -14,7 +14,6 @@ import pandas as pd
 read_csv = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Test_new.csv")
 print(read_csv)
 
-
 read_csv = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Test_new.csv",nrows=2)  # to get no of rows then use 'nrows'
 print(read_csv)
 
@@ -29,6 +28,16 @@ print(read_csv_3)
 
 read_csv_4 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv",index_col=["Age"])  #using this we can use Age column as a index in a file .rather than using original index.
 print(read_csv_4)
+
+read_csv_5 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv",header=2)  #using this we can use second column as a header in a file.
+print(read_csv_5)
+
+read_csv_6 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv",names=["col1","col2","col3","col4","col5"])  #can give header names in a file 
+print(read_csv_6)
+
+read_csv_7 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv", dtype={"Age":"float"}) #convert age column to float
+print(read_csv_7)
+
 
 
 
