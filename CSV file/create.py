@@ -15,8 +15,25 @@ read_csv = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Test_new.csv")
 print(read_csv)
 
 
-read_csv = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Test_new.csv",nrows=1)  # to get no of rows then use 'nrows'
+read_csv = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Test_new.csv",nrows=2)  # to get no of rows then use 'nrows'
 print(read_csv)
+
+read_csv_1 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv", usecols=["Age"])  # to get perticuler column in csv file use "usecols=["column_name"]"
+print(read_csv_1)
+
+read_csv_2 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv", usecols=[2])  # to get perticuler column in csv file we can give interger position of column also.
+print(read_csv_2)
+
+read_csv_3 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv", skiprows=[0])  #using this we can skip rows in a csv file
+print(read_csv_3)
+
+read_csv_4 = pd.read_csv("C:\\Users\\VSARWADE\\Desktop\\Pandas\\Student.csv",index_col=["Age"])  #using this we can use Age column as a index in a file .rather than using original index.
+print(read_csv_4)
+
+
+
+
+
 
 
 
