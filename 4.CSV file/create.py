@@ -43,10 +43,6 @@ print(read_csv_7)
 
 
 
-
-
-
-
 import pandas as pd 
 dic = {"A":[1,2,3], "B":[4,5,6], "C":[7,8,9]}
 df = pd.DataFrame(dic, index=["a", "b", "c"])
